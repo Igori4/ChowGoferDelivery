@@ -1,0 +1,295 @@
+
+:root{
+  --main-page-color: rgb(218,57,39);
+}
+
+#firstRedBlock{
+    position: absolute;
+    top: 0;
+    z-index: -100;
+}
+
+#buttonForSignIn{
+    border-radius: 2rem;
+    background: none;
+    color: var(--main-page-color);
+    background: white;
+}
+
+.nav-link{
+    color: white;
+}
+
+nav{
+    padding: 0;
+}
+.navbar-toggler{
+    background-color: var(--main-page-color);
+}
+
+.address-input, #ClientPassword{
+    padding-left: 33px;
+    border: 1px solid white;
+    border-radius: 3rem;
+    -webkit-box-shadow: -6px 2px 49px -17px rgba(0,0,0,0.75);
+    -moz-box-shadow: -6px 2px 49px -17px rgba(0,0,0,0.75);
+    box-shadow: -6px 2px 49px -17px rgba(0,0,0,0.75);
+    height: 46px;
+    width: inherit;
+    color:rgb(72, 72, 72);
+}
+
+#ClientPassword::placeholder{
+    color: rgba(128, 128, 128, 0.616);
+}
+#registrationForm button{
+    background: var(--main-page-color);
+}
+input{
+    outline:none;
+}
+
+.address-input::placeholder{
+    color: rgba(128, 128, 128, 0.616);
+}
+
+.buttonSearchFood{
+    margin: 0;
+    background-color: var(--main-page-color);
+    border-radius: 2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.mostSmollText{
+    margin: 10px 50px;
+    font-size: small;
+}
+
+.mostSmollText a{
+    color: var(--main-page-color);
+}
+
+h1,h2,h3,h4,h5,h6{
+    color:rgb(56,56,56)
+}
+
+p{
+    color:grey;
+}
+
+#firstYellowBlok{
+    position: absolute;
+    z-index: -100;
+    padding-left: 0;
+}
+
+.first-yellow-spot{
+    padding-left: 0;
+}
+
+#secondYellowBlock, #secondRedBlock{
+    position: absolute;
+    z-index: -100;
+    padding-left: 0;
+}
+
+.secondUnderBlock{
+    padding-right: 0;
+    position: absolute;
+    top: -200px;
+}
+
+.main-head-page{
+    padding: 10vh;
+    position: relative;
+
+}
+
+.shashlik-img{
+    position: absolute;
+    right: 0;
+    top: 25px;
+    z-index: -50;
+}
+
+.red-line{
+    border: 2px solid var(--main-page-color);
+    width: 50px;
+}
+
+.how-it-works-number{
+    font-size: 200px;
+    color: gray;
+    opacity: 0.1;
+}
+
+.how-it-container{
+    position: relative;
+}
+
+.how-it-info{
+    position: absolute;
+    top: 47px;
+    left: 107px;
+}
+
+.little-red-line{
+    border: 2px solid var(--main-page-color);
+    width: 20px;
+}
+
+#containerWithUnlimited{
+    background-color: white;
+    box-shadow: -4px 1px 53px -13px rgba(0,0,0,0.75);
+    padding: 3rem 3rem 0 3rem;
+}
+
+.unlimitade{
+    color: var(--main-page-color);
+}
+
+#addSignUp{
+    position: absolute;
+    top: 0;
+    right: 25%;
+    margin: 0;
+    border-radius: 2rem;
+    background-color: var(--main-page-color); 
+}
+
+.envelopIcon{
+    position: absolute;
+    top: 15px;
+    left: 4vh;
+    color: var(--main-page-color);
+}
+
+.fa-map-marker-alt{
+    color: var(--main-page-color);
+    position: absolute;
+    top: 14px;
+    left: 29px;
+}
+
+.logo-company{
+    height: 100px;
+}
+
+#learnButton, #buttonWithAllRestourants, #buttonWithRedBorder{
+    border-radius: 40px;
+}
+
+#containerWithDubleBurger{
+    position: relative;
+}
+
+.duble-burger{
+    position: absolute;
+    top: -42px;
+    left: -44px;
+    height: 328px;
+    z-index: -100;
+
+}
+
+#testyFood{
+    position: relative;
+}
+
+.angle::before{
+    content:'\25B6';
+    font-size: 15px;
+    margin-right: 5px;
+    color: var(--main-page-color);
+}
+
+.work-with-gofer{
+    position: relative;
+}
+
+.delivery-heros{
+    color: var(--main-page-color);
+}
+
+.fab{
+    color: var(--main-page-color);    
+}
+
+.envelop{
+    color: var(--main-page-color);
+}
+
+footer{
+    -webkit-box-shadow: -1px -2px 34px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -2px 34px -6px rgba(0,0,0,0.75);
+    box-shadow: -1px -2px 34px -6px rgba(0,0,0,0.75);
+}
+
+.list-unstyled li a{
+    color:rgb(56,56,56);
+}
+
+#footerCopyright{
+    background-color: var(--main-page-color);
+}
+
+#registrationContainer{
+    position: fixed;
+    z-index: 1000;
+    background-color: white;
+    margin-top: 10%;
+    border-radius: 20px;
+}
+
+@media only screen and (min-width: 1700px){
+    #mainRestourant{
+        color: rgb(56,56,56);
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .shashlik-img, #firstBurger, .soup, .duble-burger, .cook-cover{
+        display: none;
+    }
+
+    h1,h2{
+        text-align: center;
+    }
+
+    .find-groow, .mostSmollText{
+        text-align: center;
+    }
+    #mainRestourant{
+        color: rgb(56,56,56);
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #addSignUp{
+       position: relative;
+       margin-top: 15px;
+    }
+
+    #firstRedBlock, #firstYellowBlok, #secondYellowBlock, #secondRedBlock{
+       display: none;
+    }
+
+}
+
+@media only screen and (max-width: 560px){
+    .buttonSearchFood{
+        position: relative;
+        margin-top: 15px;
+   }
+    .mostSmollText{
+        text-align: center;
+    }
+
+}
+
+
+

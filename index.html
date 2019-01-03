@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ChowGofer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" 
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Перша червона пляма -->
+    <div class="container-fluid" id="firstRedBlock">
+        <div class="row justify-content-end">
+            <div class="col-xl-12 col-lg-5 col-6" style="padding-right: 0">
+                  <img src="./img/red-blok.png" alt="" class="img-fluid float-right">
+            </div>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-lg scrolling-navbar sticky-top">
+            <div class="container">
+                <a href="#" class="navbar-brand"><img src="./img/logo.png" alt="logo" ></a>
+                <button class="navbar-toggler waves-effect waves-dark"  type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto smooth-scroll align-items-center">
+                        <li class="nav-item" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="true"> 
+                            <a class="nav-link waves-effect waves-light white-lg-text mx-3" id="mainRestourant">
+                            Restourant</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn waves-effect waves-dark" id="buttonForSignIn">
+                            LOGIN / SING UP</button> 
+                        </li> 
+                        <li class="nav-item cook-cover">
+                            <a href="#!"><img src="./img/cook-cover.png" alt="cover" class="img-fluid mx-3"></a> 
+                        </li>
+                    </ul>       
+                </div>
+            </div>
+        </nav>
+        <div id="registrationContainer" class="w-100 text-center offset-4 col-4">
+            <form action="#" id="registrationForm" class="d-flex flex-column align-items-center">
+                <h1 class="font-weight-bold my-2">LOG IN</h1>
+                <input type="email" placeholder="Your Email" id="ClientEmail" class="my-2 address-input">
+                <input type="password" placeholder="Your Password" id="ClientPassword">
+                <button class="btn my-2">LOG IN</button>
+                <p>If you are not registered please <a href="#" id="registerLink">click here</a></p>
+            </form>
+        </div>
+        <div class="container main-head-page">
+            <div class="row">
+                <div class="col-lg-7 col-md-12">
+                        <h1 class="font-weight-bold">
+                            YOUR FAVORITE FOOD, FROM
+                            THE BEST RESOURANTS,
+                            DELIVERED TO YOUR DOOR!
+                        </h1>
+                        <form action="#">
+                        <div class="row justify-content-center justify-content-md-start" style="position: relative">
+                            <div class="col-md-12 col-lg-10" style="position: relative;" >
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <input type="text" class="address-input" placeholder="Enter your address">
+                            </div>
+                            <button class="btn buttonSearchFood">FIND ME FOOD!</button>
+                        </div>
+                    </form>
+                    <p class="mostSmollText text-center text-md-left">Staying at a hotel? <a href="#">Click here</a></p>
+                </div>
+                <div class="col-lg-5">
+                        <img src="./img/shashlik.png" alt="" class="img-fluid shashlik-img">
+                </div>
+            </div>
+        </div>         
+    </header>     
+    <main>
+        <div class="container-fluid my-5 pb-4" >
+            <h2 class="mt-5 font-weight-bold text-center">
+                HOW IT WORKS
+            </h2>
+            <div class="d-flex justify-content-center py-3">
+                <div class="red-line">
+                </div>
+        </div>
+            <div class="row mt-3 justify-content-center px-5 ">
+                <div class="col-md-4 col-sm-8 how-it-container wow fadeInLeft" data-wow-delay="0.2s">
+                    <p class="how-it-works-number font-weight-bold">1</p>
+                    <div class="d-flex flex-column how-it-info ">
+                        <img src="./img/icon-1.png" style="width:80px" alt="">
+                        <p class="font-weight-bold pt-2">PICK IT</p>
+                        <div class="little-red-line"></div>
+                        <p class="mt-2">
+                            Browes menus from your
+                           favorite local restourant
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-8 how-it-container wow fadeInUp" data-wow-delay="0.2s">
+                    <p class="how-it-works-number font-weight-bold">2</p>
+                    <div class="d-flex flex-column how-it-info ">
+                            <img src="./img/icon-3.png" style="width:80px" alt="">
+                        <p class="font-weight-bold pt-2">CLICK IT</p>
+                        <div class="little-red-line"></div>
+                        <p class="mt-2">
+                            Select your CHOW.
+                            Place your order
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-8 how-it-container wow fadeInRight" data-wow-delay="0.2s">
+                    <p class="how-it-works-number font-weight-bold">3</p>
+                    <div class="d-flex flex-column how-it-info">
+                            <img src="./img/icon-2.png" style="width:70px;margin-top: 14px;" alt="">
+                        <p class="font-weight-bold pt-2">GET IT DELIVERED</p>
+                        <div class="little-red-line"></div>
+                        <p class="mt-2">
+                            Browes menus from your
+                           favorite local restourant
+                        </p>
+                    </div>
+                </div>
+            </div> 
+                       <!-- Перша гірчична пляма -->
+            <div class="row justify-content-start" id="firstYellowBlok">
+                <div class=" col-sm-5 col-md-8 col-lg-10  first-yellow-spot" >
+                      <img src="./img/yellow-blok.png" alt="yellow-blok" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid my-5">
+            <div class="container wow fadeIn" data-wow-delay="0.2s" id="containerWithUnlimited">
+                <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-8">
+                        <h2 class="mt-3 font-weight-bold">
+                            SIGN UP AND GET 
+                            <a href="#" class="unlimitade">UNLIMITADE DELIVERIES</a>
+                            FROM ANY LOCAL RESTOURANT
+                            </h2>
+                        <form action="#">
+                            <div class="row justify-content-center justify-content-md-start mt-5" style="position: relative;">
+                                <div class="col-md-8 col-lg-8 d-flex flex-sm-column text-center">
+                                        <i class="fas fa-envelope envelopIcon"></i>
+                                    <input type="text" class="form-control address-input" placeholder="Enter your e-mail">
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button class="btn font-weight-bold"  id="addSignUp">SIGN UP!</button>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="mostSmollText" style="margin-left: 0">Get two month of unlimited deliveries FOR FREE!</p>
+                    </div>
+                    <div class="col-md-4">
+                            <img src="./img/burger-1.png" alt="burger" class="img-fluid" id="firstBurger" style="height: 286px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3 ">
+            <div class="row justify-content-center wow fadeIn" data-wow-delay="0.2s">
+                <div class="col-lg-7 col-md-10 px-5">
+                    <h2 class=" font-weight-bold">
+                        WE DELIVER FOR RESTOURANTS
+                        THAT DON'T DELIVER
+                    </h2>
+                </div>
+            </div>
+        <div class="row flex-column flex-md-row justify-content-center my-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="col-md-2 col-sm-12 text-center">
+                <img src="./img/burger-king.png" class="img-fluid logo-company" alt="burger-king">
+            </div>
+            <div class="col-md-2 col-sm-12 text-center">
+                <img src="./img/ihope.png" class="img-fluid logo-company" alt="ihop">
+            </div>
+            <div class="col-md-2 col-sm-12 text-center">
+                <img src="./img/JR.png" class="img-fluid logo-company" alt="JR">
+            </div>
+            <div class="col-md-2 col-sm-12 text-center">
+                <img src="./img/WS.jpg" class="img-fluid logo-company" alt="WS">
+            </div>
+            <div class="col-md-2 col-sm-12 text-center">
+                <img src="./img/chipotle.png" class="img-fluid logo-company" alt="Chipotle">
+            </div>        
+        </div>
+        </div>
+                          <!-- Друга гірчична пляма -->
+        <div class="container-fluid" id="secondYellowBlock">
+            <div class="row justify-content-end">
+                <div class="col-lg-4 col-md-5 col-xl-12" style="padding-right: 0">
+                    <img src="./img/yellow-blok2.png" alt="" class="img-fluid float-right">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row  flex-column align-items-center mt-5" id="containerWithDubleBurger">           
+                <button class="btn btn-outline-danger mb-5 waves-effect waves-dark wow fadeInRightBig" data-wow-delay="0.2s"
+                id="buttonWithAllRestourants">ALL RESTOURANTS
+                </button>
+                <img src="./img/duble-burger.png" alt="duble-burger" class="duble-burger wow fadeInleft" data-wow-delay="0.2s">
+            </div>
+        </div>
+        <div class="container p-5" id="testyFood">
+            <h2 class="mt-5 font-weight-bold text-center wow fadeInRightBig" data-wow-delay="0.2s">
+                FOR LOCAL BUSINESSES
+            </h2>
+            <div class="d-flex justify-content-center mb-5">
+                    <div class="red-line wow fadeInLeftBig" data-wow-delay="0.1s"></div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="row">
+                        <div class="find-groow col-lg-12">
+                            <p class="mt-2 text-left ml-5 mostSmollText text-center">
+                                Find out how to start growing youe businesses with online ordering.
+                            </p>
+                            <button class="btn btn-outline-danger waves-effect waves-dark my-5 ml-lg-5 ml-md-0"
+                                id="learnButton" >LEARN MORE
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInRightBig" data-wow-delay="0.3s">
+                    <img src="./img/testy-1.png" alt="soup" class=" soup img-fluid">
+                 </div>
+            </div>
+        </div>
+         <!-- Друга червона пляма -->
+        <div class="container-fluid" id="secondRedBlock">
+            <div class="row justify-content-start" style="position: relative;">
+                <div class="col-lg-4 col-md-5 secondUnderBlock">
+                    <img src="./img/second-red-block.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="container y-5">
+            <div class="row">
+                <div class="col-md-5 wow fadeIn" data-wow-delay="0.4s">
+                   <img src="./img/phone1.png" alt="phone" class="img-fluid">
+                </div>
+                <div class="col-md-7 d-flex flex-column wow fadeIn" data-wow-delay="0.4s">
+                    <h2 class=" font-weight-bold pl-1">
+                        ALL OF YOU FAVORITE RESTOURANTS,<br>
+                        <a href="#" class="unlimitade">ALL OF ONE APP</a>
+                    </h2>
+                    <p class="my-2 pl-1">
+                        Explore the most popular cusines avalible for pick-up <br>
+                        or delivery in our neighborhood.
+                    </p>
+                    <h5 class="mt-3 font-weight-bold">
+                        Download the Chow Gofer app today!
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li class="angle">Live track orders!</li>
+                        <li class="angle">Easy ordering</li>
+                        <li class="angle">Special Discounts</li>
+                    </ul>
+                    <div class="row justify-content-start">
+                        <div class="col-md-10">
+                           <a href="https://www.apple.com/lae/ios/app-store/" target="block"><img src="./img/icon-app.png" alt="app" class="wow fadeInLeftBig" data-wow-delay="0.4s"></a>
+                           <a href="https://play.google.com/store" target="block"><img src="./img/icon-google.png" alt="googleplay"  class="wow fadeInRightBig" data-wow-delay="0.4s"></a>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container work-with-gofer">
+            <h2 class="mt-5 font-weight-bold text-center wow fadeIn" data-wow-delay="0.2s">
+                DRIVE WITH CHOWGOFER
+            </h2>
+            <div class="d-flex justify-content-center mb-5">
+                <div class="red-line  wow fadeInLeftBig" data-wow-delay="0.2s"></div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4 pl-5  wow fadeIn" data-wow-delay="0.2s">
+                    <p class="delivery-heros font-weight-bold">
+                        Delivery heroes needed!
+                    </p>
+                    <p>Earn extra income, set tour own schedule</p>
+                    <button class=" btn btn-outline-danger waves-effect waves-dark my-3" id="buttonWithRedBorder">LEARN MORE</button>
+                </div>
+                <div class="col-md-7  wow fadeIn" data-wow-delay="1s">
+                    <img src="./img/CarBoy.png" alt="car-with-boy" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./img/logo11.png" alt="logoFooter" class="img-fluid mb-4">
+                </div>
+                <div class="col-md-5">
+                    <a href="#"><i class="fa fa-envelope  my-4 mr-3 fa-2x envelop"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f my-4 mx-3 fa-2x"></i></a> 
+                    <a href="#"><i class="fab fa-twitter my-4 mx-3 fa-2x"></i></a> 
+                  <a href="#"><i class="fab fa-instagram my-4 mx-3 fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        Chow Gofer is a restourant marketint firm. When engaging our <br>
+                        company to coordinate your meal delivery, you're hiring the <br>
+                        services of self-emp;oyed catering and delivery professionals. All <br>
+                        names and Logos are properties of the respective owners. The <br>
+                        use of logos and display of menus does not imply partnerships <br>
+                        with any and or all restourants listed.
+                        <br>
+                        <br>
+                        &#169; 2015-2018 ChowGofer.All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-md-5 d-flex justify-content-between">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">About ChowGofer</a>
+                        </li>
+                        <li>
+                            <a href="#!">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#!">Become a delivery partner</a>
+                        </li>
+                        <li>
+                            <a href="#!">Become a restourant partner</a>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">See all cities</a>
+                        </li>
+                        <li>
+                            <a href="#!">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#!">Gift cCertificates</a>
+                        </li>
+                        <li>
+                            <a href="#!">Cetering</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3" id="footerCopyright">© 2018 Copyright:
+            <a href="#!">A partner of Deliver Logic's instant Delivery Network Delivety software by DeliverLogic.</a>
+        </div>
+    </footer> 
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script>
+
+    new WOW().init();
+
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
