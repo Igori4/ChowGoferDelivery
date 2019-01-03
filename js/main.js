@@ -4,3 +4,9 @@ singInButton.onclick = function(){
     singInForm.hidden = false;
 }
 
+let exameUserButton = document.getElementById('exameUser');
+
+exameUserButton.onclick = function (){
+    singInForm.hidden = true;
+}
+
