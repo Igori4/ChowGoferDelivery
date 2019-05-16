@@ -4,9 +4,10 @@ singInButton.onclick = function(){
     singInForm.hidden = false;
 }
 
-let exameUserButton = document.getElementById('exameUser');
+let closeRegistration = document.querySelector('.close-registration-menu');
 
-exameUserButton.onclick = function (){
+
+closeRegistration.addEventListener('click',() => {
     singInForm.hidden = true;
-}
+})
 

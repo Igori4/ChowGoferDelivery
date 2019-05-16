@@ -42,9 +42,40 @@ nav{
 #ClientPassword::placeholder{
     color: rgba(128, 128, 128, 0.616);
 }
+
+#registrationContainer {
+    padding: 0;
+}
+
 #registrationForm button{
     background: var(--main-page-color);
 }
+
+#registrationForm {
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0px 1px 6px 0px;
+}
+
+.close-registration-menu {
+    height: 28px;
+    width: 29px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid var(--main-page-color);
+    top: -4px;
+    right: -8px;
+    border-radius: 29px;
+    position: absolute;
+    background: rgb(245, 244, 242);
+    color: var(--main-page-color);
+    cursor: pointer;
+}
+
+.how-it-works {
+    max-width: 1140px;
+}
+
 input{
     outline:none;
 }
@@ -262,10 +293,20 @@ footer{
     .find-groow, .mostSmollText{
         text-align: center;
     }
+
     #mainRestourant{
         color: rgb(56,56,56);
         font-weight: bold;
     }
+
+    #registrationForm {
+        padding: 11px 0;
+        width: 400px;
+        left: -30px;
+        height: 314px;
+        background: white;
+    }
+
 }
 
 @media only screen and (max-width: 767px){
@@ -278,6 +319,14 @@ footer{
        display: none;
     }
 
+    #registrationForm {
+        padding: 11px 0;
+        width: 400px;
+        height: 314px;
+        left: -87px;
+        background: white;
+    }
+
 }
 
 @media only screen and (max-width: 560px){
@@ -287,6 +336,28 @@ footer{
    }
     .mostSmollText{
         text-align: center;
+    }
+
+    #registrationForm {
+        width: 330px;
+        height: 288px;
+    }
+
+    #registrationForm h1 {
+        font-size: 24px;
+    }
+
+    #registrationForm p {
+        font-size: 13px;
+    }
+
+    #ClientPassword, #ClientEmail {
+        -webkit-box-shadow: -6px 2px 49px -17px rgba(0,0,0,0.75);
+        -moz-box-shadow: -6px 2px 49px -17px rgba(0,0,0,0.75);
+        box-shadow: -2px 2px 4px 0px rgba(241, 185, 185, 0.75);
+        height: 46px;
+        width: 259px;
+        color: rgb(72, 72, 72);
     }
 
 }
